@@ -2,7 +2,8 @@
  * Client-side API: calls Next.js API routes (same origin).
  * Use for login, register, session so cookies are sent automatically.
  */
-const BASE = '';
+
+const BASE = process.env.API_URL || '';
 
 export async function api<T>(
   path: string,
