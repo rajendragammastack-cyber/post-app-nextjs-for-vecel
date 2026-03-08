@@ -3,7 +3,7 @@
  * Use for login, register, session so cookies are sent automatically.
  */
 
-const BASE = process.env.API_URL || '';
+const BASE = process.env.NEXT_PUBLIC_API_URL || '';
 
 export async function api<T>(
   path: string,
